@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacksands Production | Marketing Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,15,15,.95);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,162,39,.15);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:1.6rem;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+.logo span{
+    color:#c9a227;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c9a227;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.gold{
+    color:#c9a227;
+}
+
+.hero p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:40px;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#c9a227;
+    color:#111;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#171717;
+    padding:35px;
+    border-radius:15px;
+    border:1px solid rgba(201,162,39,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#c9a227;
+}
+
+.card h3{
+    color:#c9a227;
+    margin-bottom:15px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:#171717;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h3{
+    color:#c9a227;
+    font-size:2rem;
+}
+
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.portfolio img{
+    width:100%;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    background:#171717;
+    border:none;
+    color:white;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid rgba(201,162,39,.15);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">BLACK<span>SANDS</span></div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-content">
+<h1>Marketing That <span class="gold">Moves Businesses Forward</span></h1>
+
+<p>
+Blacksands Production helps businesses across Saint Lucia and the Caribbean grow through creative marketing, content creation, branding, and digital advertising.
+</p>
+
+<a href="#contact" class="btn">Book a Consultation</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+
+<div class="section-title">
+<h2>About Us</h2>
+</div>
+
+<div class="about">
+
+<div>
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4f?auto=format&fit=crop&w=1200&q=80">
+</div>
+
+<div>
+<h2>Creative. Strategic. Results Driven.</h2>
+
+<p>
+Blacksands Production is a Saint Lucian marketing agency helping brands stand out through powerful storytelling, content creation, social media management, and digital marketing.
+</p>
+
+<br>
+
+<p>
+Our mission is simple: create content that captures attention and marketing strategies that deliver measurable growth.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h3>11+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h3>100+</h3>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat">
+<h3>50+</h3>
+<p>Brands Served</p>
+</div>
+
+<div class="stat">
+<h3>100%</h3>
+<p>Passion Driven</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Services</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>Social Media Management</h3>
+<p>Strategy, content creation, scheduling, engagement and reporting.</p>
+</div>
+
+<div class="card">
+<h3>Photography</h3>
+<p>Commercial, tourism, real estate, product and event photography.</p>
+</div>
+
+<div class="card">
+<h3>Videography</h3>
+<p>Promotional videos, reels, drone footage and campaign content.</p>
+</div>
+
+<div class="card">
+<h3>Branding</h3>
+<p>Logo design, brand identity and visual storytelling.</p>
+</div>
+
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern websites designed to generate leads and sales.</p>
+</div>
+
+<div class="card">
+<h3>Digital Advertising</h3>
+<p>Facebook, Instagram and Google ad campaigns.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Featured Work</h2>
+</div>
+
+<div class="portfolio">
+
+<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80">
+
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<div class="section-title">
+<h2>Let's Build Something Great</h2>
+</div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Business Name">
+
+<textarea rows="6" placeholder="Tell us about your project"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Blacksands Production. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
